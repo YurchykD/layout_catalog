@@ -2,7 +2,9 @@
   height: 60px;
 
   &__blocks {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, auto));
+    grid-template-rows: 1fr;
     list-style: none;
     align-items: center;
   }
