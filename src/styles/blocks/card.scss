@@ -31,8 +31,7 @@
   }
 
   &__rating {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, auto));
+    display: flex;
     justify-content: space-between;
     height: 16px;
     margin: 0 0 24px;
@@ -41,8 +40,7 @@
 
   &__price {
     margin: 0 0 15px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     justify-content: space-between;
   }
 
@@ -61,8 +59,7 @@
   }
 
   &__link {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
