@@ -16,7 +16,8 @@
   }
 
   &__picture:hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
+    transform-origin: center bottom;
     border: 3px solid #f3f3f3;
   }
 
@@ -82,7 +83,7 @@
     color: $card__link-color;
     background: #00acdc;
     border: 1px solid #00acdc;
-    transition-duration: 400ms;
+    transition: all 400ms;
   }
 
   &__link:hover {
