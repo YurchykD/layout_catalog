@@ -8,9 +8,17 @@
   text-align: center;
 
   &__picture {
-    height: $picture-height;
+    min-height: $picture-height;
     width: $picture-width;
     margin: 32px 0 36px;
+    transition-duration: 400ms;
+    transition-property: transform, transform-origin;
+  }
+
+  &__picture:hover {
+    transform: scale(1.25);
+    transform-origin: center bottom;
+    border: 3px solid #f3f3f3;
   }
 
   &__title {
@@ -75,6 +83,7 @@
     color: $card__link-color;
     background: #00acdc;
     border: 1px solid #00acdc;
+    transition: all 400ms;
   }
 
   &__link:hover {
